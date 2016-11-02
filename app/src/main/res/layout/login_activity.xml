@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/background_light"
+    tools:context="com.hanep.mobpro_uts_aihanifa.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+            <TextView
+
+                android:text="Selamat datang di Cake Chef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_name"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/black"
+                android:paddingTop="20dp" />
+
+            <TextView
+                android:text="Login Disini"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_log"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textColor="@android:color/black"
+                android:paddingTop="10dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="181dp"
+                app2:srcCompat="@drawable/logo"
+                android:id="@+id/imageView" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="40dp">
+
+                <TextView
+                    android:text="Username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbl_username"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="monospace" />
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/txtUsername"
+                    android:layout_weight="0.73"
+                    android:textColor="@android:color/black"
+                    android:hint="Masukkan Username"
+                    android:layout_width="wrap_content"
+                    android:textSize="15sp"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:fontFamily="monospace" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbl_password"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:fontFamily="monospace" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/txtPassword"
+                    android:layout_weight="0.73"
+                    android:hint="Masukan Password"
+                    android:textSize="15sp"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:text="Login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnLogin"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:textStyle="normal|bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="158dp">
+
+                <Button
+                    android:text="Lupa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lupa" />
+
+                <TextView
+                    android:text="KANEP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_lbl"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:layout_marginTop="125dp"
+                    android:fontFamily="sans-serif" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
